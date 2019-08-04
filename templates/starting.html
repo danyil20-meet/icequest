@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='starting.css') }}">
+		<script src="{{url_for('static', filename='starting.js')}}"></script>
+	</head>
+
+	<body>
+		<div>
+			<h1>NAME</h1>
+			<p>Think. Win. Eat IceCream</p>
+
+			<a href = "#about_h" class="button" onclick="add_popup()">GET STARTED</a>
+		</div>
+
+
+		<div id="about_us">
+			<h1 id = "about_h">About Us</h1>
+			
+			<div id = "idea_div">
+				<img src="{{url_for('static', filename='idea_icon.jpg')}}" />
+				<p style ="margin-bottom:5px">Your goal - to get out of a room <br> full of different puzzles and riddles</p>
+			</div>
+
+			<div id ="team_div">
+				<img src="{{url_for('static', filename='team_icon.jpg')}}" />
+				<p style ="margin-top: 0.5px">Make bi-national teams <br> to get extra prizes </p>
+			</div>
+
+			<div id = "time_div">
+				<img src="{{url_for('static', filename='clock_icon.jpg')}}" />
+				<p>You will have only 60 minutes <br> to get out of the room</p>
+			</div>
+
+			<div id = "icecream_div" >
+				<img src="{{url_for('static', filename='icecream_icon.jpg')}}" />
+				<p>WIN ICE CREAM</p>
+			</div>
+		</div>
+	</body>
+	
+</html>
